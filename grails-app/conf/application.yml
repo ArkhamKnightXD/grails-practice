@@ -1,5 +1,6 @@
 ---
-#En este archivo se trabaja lo que es la configuracion general del grails, aqui puedo definir cosas como la base de datos que utilizare
+#En este archivo se trabaja lo que es la configuracion general del grails, aqui puedo definir cosas como
+#la base de datos que utilizare
 grails:
     profile: web
     codegen:
