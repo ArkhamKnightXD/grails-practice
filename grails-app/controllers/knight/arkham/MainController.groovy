@@ -5,9 +5,10 @@ package knight.arkham
 // aunque funciona con el main solo
 class MainController {
 
-    //Si dejo el index vacio, mme retornara por defecto me retornara la vista
+    //Si dejo el index vacio por defecto me retornara la vista
     // que este en la carpeta main que se ubica en resource
     def index() {
+
         //Aqui mando un texto para mostrar
         //render("Welcome to grails")
 

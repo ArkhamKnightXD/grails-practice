@@ -2,7 +2,10 @@
 <html>
 <head>
     <!-- las vistas en grails tienen formato gsp, pero no hay problema
-    usa el mismo html que cualquier otra vista-->
+    usa el mismo html que cualquier otra vista, otra cosa a tener en mente es que en grails
+no hay necesidad de agregar bootstrap o algun otro archivo css o java script mediante <link> ya que grails
+lo agrega a esta plantilla automaticamente siempre y cuando este archivo se encuentre dentro de la carpeta assets
+ya que aqui se guardan las imagenes, archivos css y js-->
     <meta name="layout" content="main"/>
     <title>Welcome to Grails</title>
 </head>
@@ -58,13 +61,10 @@ basicamente se trabaja igual que con freemarker-->
         <h1>Prueba de creacion de pagina en grails sea bienvenido: ${username}</h1>
 
         <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+            Prueba de cambio de pagina de inicio mediante url mappings
         </p>
 
-        <div id="controllers" role="navigation">
+        <div id="controllers"  role="navigation">
             <h2>Available Controllers:</h2>
             <ul>
                 <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">

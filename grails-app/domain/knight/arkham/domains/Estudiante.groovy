@@ -7,7 +7,7 @@ class Estudiante {
     String nombre;
     String apellido
     String email
-    transient String noIrPerteneceAlModelo;
+    transient String noLePerteneceAlModelo;
 
     //Los setea automatico...
     Date dateCreated
@@ -29,6 +29,9 @@ class Estudiante {
 
     // La diferencia de los modelos domain de las entidades en java es que no hay necesidad de crear repositorios
     // Ya que desde el mismo domain un puede implementar su propio crud, sin necesidad de crear repositorios
+    //Incluso escribir estas funciones aqui esta demas, pues puedes hacer lo directo llamando la clase desde el controlador
+    //Pongo estas funciones aqui como ejemplo, pero a la hora de trabajar en el controlador se trabaja directamente con el domain
+    // y nada de crear funciones extra
 
     public void crearEstudiante(Estudiante estudiante){
 

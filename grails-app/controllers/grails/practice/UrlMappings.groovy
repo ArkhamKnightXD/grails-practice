@@ -11,7 +11,7 @@ class UrlMappings {
             }
         }
 
-        // De esta forma indico que la pagina index sera mostrada mediante el controlador main
+        // De esta forma indico que la vista index esta asociada a el controlador main cuando acceda a la url localhost:8080/ se mostrara
         "/"(controller: 'main', view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
